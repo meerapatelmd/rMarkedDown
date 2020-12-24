@@ -1,0 +1,32 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# rMarkedDown
+
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/rMarkedDown)](https://CRAN.R-project.org/package=rMarkedDown)
+<!-- badges: end -->
+
+rMarkedDown is a package of simple HTML document rmarkdown templates
+inspired by the options outlined at
+<https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents>.
+
+## Installation
+
+You can install the released version of rMarkedDown from
+[GitHub](https://GitHub.com) with:
+
+``` r
+devtools::install_github("meerapatelmd/rMarkedDown")
+```
+
+## Code of Conduct
+
+Please note that the rMarkedDown project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
