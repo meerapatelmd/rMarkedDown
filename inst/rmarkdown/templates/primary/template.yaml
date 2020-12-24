@@ -1,2 +1,4 @@
-name: Primary RMarkdown Template
-description: This is the main template for this package.
+name: Primary
+description: >
+   The main template for this package.
+create_dir: FALSE
