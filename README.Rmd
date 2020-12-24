@@ -20,40 +20,15 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/rMarkedDown)](https://CRAN.R-project.org/package=rMarkedDown)
 <!-- badges: end -->
 
-The goal of rMarkedDown is to ...
+rMarkedDown is a package of simple HTML document rmarkdown templates inspired by the options outlined at https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents. 
 
 ## Installation
 
-You can install the released version of rMarkedDown from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of rMarkedDown from [GitHub](https://GitHub.com) with:
 
 ``` r
-install.packages("rMarkedDown")
+devtools::install_github("meerapatelmd/rMarkedDown")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-library(rMarkedDown)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
 
 ## Code of Conduct
 
