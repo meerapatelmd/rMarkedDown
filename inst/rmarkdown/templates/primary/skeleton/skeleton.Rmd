@@ -24,7 +24,10 @@ knit: (function(inputFile, encoding) {
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,
+knitr::opts_chunk$set(comment = "##",
+                      tidy = TRUE, #`styler` to use styler:style_text() to reformat code
+                      tidy.opts = list(blank = FALSE, width.cutoff = 60),
+                      echo = TRUE,
                       eval = TRUE,
                       cache = TRUE,
                       cache.path = "reports/cache/",
@@ -32,6 +35,8 @@ knitr::opts_chunk$set(echo = TRUE,
                       collapse = FALSE, #collapse all output into a single block,
                       error = TRUE, #display error messages in doc. FALSE stops render when error is thrown
                       fig.align = "center", #left, right, center, or default
+                      fig.width = 7, #inches
+                      fig.height = 7, #inches
                       include = TRUE, #include chunk?
                       message = TRUE, #display code messages?
                       tidy = TRUE, #tidy code 
@@ -44,11 +49,17 @@ knitr::opts_chunk$set(echo = TRUE,
 ```
   
   
-## Introduction  
+## Themes    
 
 Themes can be viewed at: https://bootswatch.com/3/.  
 
+
+## Syntax Highlighting  
+
 Syntax Highlighting Styles can be viewed at https://www.garrickadenbuie.com/blog/pandoc-syntax-highlighting-examples/.  
+
+
+## Dataframe  
 
 Dataframe printing options include `default`, `kable`, `tibble`, or `paged`.  
 
@@ -63,10 +74,3 @@ For paged dataframes, the chunk options include:
 * rownames.print: when set to `FALSE` turns off row names for the chunk  
 
 
-
-
-  
-## Analysis  
-  
-## Conclusions  
-  
