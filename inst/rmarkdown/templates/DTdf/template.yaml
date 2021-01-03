@@ -1,0 +1,4 @@
+name: Primary with DT Print
+description: >
+   The main template for this package with downloadable table printing.
+create_dir: FALSE
