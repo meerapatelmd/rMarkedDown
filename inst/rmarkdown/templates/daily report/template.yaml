@@ -1,0 +1,6 @@
+name: Daily Report
+description: >
+   Template to write an HTML report that will be rendered every day, such as a
+   report on the diffs detected for a process that migrates data between 2
+   databases everyday.
+create_dir: FALSE

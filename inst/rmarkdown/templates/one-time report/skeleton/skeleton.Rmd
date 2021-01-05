@@ -1,5 +1,5 @@
 ---
-title: "Primary Template"
+title: "One-Time Reporting Template"
 author: "Meera Y. Patel, M.D."
 date: "`r Sys.Date()`"
 output: 
@@ -19,7 +19,7 @@ output:
     fig_caption: true
     dev: png
 knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "reports") 
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "reports/one-time") 
   })
 ---
 
