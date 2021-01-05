@@ -1,0 +1,71 @@
+---
+title: "PDF Template"
+author: "Meera Y. Patel, M.D."
+date: "`r Sys.Date()`"
+output: 
+  pdf_document:
+    highlight: kate  
+    toc: yes
+    number_sections: true
+    toc_depth: 3 
+    df_print: kable
+    fig_height: 5 
+    fig_width: 7 
+    fig_crop: true
+    fig_caption: true
+    dev: pdf
+  documentclass: article #LaTeX document class
+  classoption: oneside #documentclass option
+  fontsize: 11pt
+  # geometry: options for geometry class
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(comment = "##",
+                      tidy = TRUE, #`styler` to use styler:style_text() to reformat code
+                      tidy.opts = list(blank = FALSE, width.cutoff = 60),
+                      echo = TRUE,
+                      eval = TRUE,
+                      cache = TRUE,
+                      cache.path = "reports/cache/",
+                      child = NULL, #file/s to knit and then include,
+                      collapse = FALSE, #collapse all output into a single block,
+                      error = TRUE, #display error messages in doc. FALSE stops render when error is thrown
+                      fig.align = "center", #left, right, center, or default
+                      fig.width = 7, #inches
+                      fig.height = 7, #inches
+                      fig.asp=0.50, #adds whitespace around images
+                      include = TRUE, #include chunk?
+                      message = TRUE, #display code messages?
+                      tidy = TRUE, #tidy code 
+                      warning = TRUE, #include warnings?
+                      results = "markup"
+                        # "asis": passthrough results
+                        # "hide": do not display results 
+                        # "hold": put all results below all code
+                      )
+```
+  
+
+## Syntax Highlighting  
+
+Syntax Highlighting Styles can be viewed at https://www.garrickadenbuie.com/blog/pandoc-syntax-highlighting-examples/.  
+
+
+## Dataframe  
+
+Dataframe printing options include `default`, `kable`, or `tibble`.  
+
+
+## Figure Captions
+
+```{r,message=FALSE,fig.align="center", fig.width=6, fig.height=6, fig.cap="Figure: Here is a really important caption."}
+library(tidyverse)
+mpg %>%
+  ggplot( aes(x=reorder(class, hwy), y=hwy, fill=class)) + 
+    geom_boxplot() +
+    xlab("class") +
+    theme(legend.position="none")
+```
+
+
