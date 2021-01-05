@@ -37,6 +37,7 @@ knitr::opts_chunk$set(comment = "##",
                       fig.align = "center", #left, right, center, or default
                       fig.width = 7, #inches
                       fig.height = 7, #inches
+                      fig.asp=0.50, #adds whitespace around images
                       include = TRUE, #include chunk?
                       message = TRUE, #display code messages?
                       tidy = TRUE, #tidy code 

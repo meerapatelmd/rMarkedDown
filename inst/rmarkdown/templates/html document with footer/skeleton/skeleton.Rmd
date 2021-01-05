@@ -1,5 +1,5 @@
 ---
-title: "One-Time Reporting Template"
+title: "HTML Document with Footer Template"
 author: "Meera Y. Patel, M.D."
 date: "`r Sys.Date()`"
 output: 
@@ -18,9 +18,8 @@ output:
     fig_width: 7 
     fig_caption: true
     dev: png
-knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "reports/one-time") 
-  })
+    includes:
+      after_body: footer.html
 ---
 
 ```{r setup, include=FALSE}
