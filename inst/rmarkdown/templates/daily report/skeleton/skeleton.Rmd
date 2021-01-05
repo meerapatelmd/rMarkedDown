@@ -4,6 +4,7 @@ author: "Meera Y. Patel, M.D."
 date: "`r Sys.Date()`"
 output: 
   html_document:
+    css: style.css
     theme: flatly
     highlight: kate  
     toc: yes
@@ -74,4 +75,14 @@ For paged dataframes, the chunk options include:
 * paged.print: when set to `FALSE` turns off paged display for the chunk    
 * rownames.print: when set to `FALSE` turns off row names for the chunk  
 
+## Figure Captions
+
+```{r,fig.align="center", fig.width=6, fig.height=6, fig.cap="Figure: Here is a really important caption."}
+library(tidyverse)
+mpg %>%
+  ggplot( aes(x=reorder(class, hwy), y=hwy, fill=class)) + 
+    geom_boxplot() +
+    xlab("class") +
+    theme(legend.position="none")
+```
 
