@@ -13,6 +13,7 @@
 print_dt <-
     function(x){
     DT::datatable(x,
+                  rownames = FALSE,
                   extensions = 'Buttons',
                   options = list(dom = 'Blfrtip',
                                  buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
